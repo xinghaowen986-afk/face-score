@@ -1,0 +1,9 @@
+# 统一换行符，避免 Windows 上提交后到处显示改动
+* text=auto eol=lf
+*.cmd text eol=crlf
+
+# 二进制资源，不要做换行或 diff 转换
+*.wasm binary
+*.task binary
+*.png binary
+*.jpg binary
