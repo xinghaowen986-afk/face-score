@@ -1,6 +1,7 @@
 # 统一换行符，避免 Windows 上提交后到处显示改动
 * text=auto eol=lf
-*.cmd text eol=crlf
+# .cmd 保持原样的 CRLF：cmd.exe 对纯 LF 的批处理在少数情况下会解析异常
+*.cmd -text
 
 # 二进制资源，不要做换行或 diff 转换
 *.wasm binary
