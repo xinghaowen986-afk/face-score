@@ -908,7 +908,7 @@ async function loadLandmarker(){
           const lm = await mod.FaceLandmarker.createFromOptions(fileset, {
             baseOptions:{ modelAssetBuffer:buf, delegate },
             runningMode:'IMAGE',
-            numFaces:4,
+            numFaces:8,
             outputFaceBlendshapes:false,
             outputFacialTransformationMatrixes:false
           });
